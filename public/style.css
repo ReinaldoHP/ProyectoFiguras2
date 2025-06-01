@@ -1,0 +1,217 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fondo general */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(180deg, #BAF3E3, #6F77CC);
+  padding: 40px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #333;
+}
+
+/* Títulos */
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #1a237e;
+}
+
+h2 {
+  margin-bottom: 15px;
+  color: #3949ab;
+}
+
+/* Formulario */
+form {
+  background-color: #ffffff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: left;
+}
+
+/* Inputs */
+input[type="number"],
+input[type="text"] {
+  width: 100%;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1em;
+}
+
+/* Botón */
+button {
+  background-color: #1976d2;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #0d47a1;
+}
+
+/* Resultado */
+p {
+  margin-top: 20px;
+  font-weight: 600;
+  color: #2e7d32;
+  background-color: #e8f5e9;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #c8e6c9;
+}
+
+/* Navegación principal */
+ul {
+  list-style: none;
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #1976d2;
+  font-weight: 600;
+  padding: 10px 20px;
+  border: 2px solid #1976d2;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+ul li a:hover {
+  background-color: #1976d2;
+  color: white;
+}
+
+/* Contenedor de botones */
+.botones {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+/* Botón Área */
+.btn-area {
+  background-color: #388e3c;
+  border: none;
+  padding: 12px 20px;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 8px;
+  flex: 1;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-area:hover {
+  background-color: #2e7d32;
+}
+
+/* Botón Perímetro */
+.btn-perimetro {
+  background-color: #0288d1;
+  border: none;
+  padding: 12px 20px;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 8px;
+  flex: 1;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-perimetro:hover {
+  background-color: #0277bd;
+}
+
+ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+ul li img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+ul li img:hover {
+  transform: scale(1.05);
+}
+
+.menu-figuras {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 30px;
+  padding: 0;
+  list-style: none;
+}
+
+.menu-figuras li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 180px;
+  transition: transform 0.3s ease;
+}
+
+.menu-figuras li:hover {
+  transform: translateY(-5px);
+}
+
+/* Imágenes */
+.menu-figuras li img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+/* Botones */
+.menu-figuras li a {
+  display: inline-block;
+  background-color: transparent;
+  color: #1976d2;
+  padding: 10px 20px;
+  border: 2px solid #1976d2;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.menu-figuras li a:hover {
+  background-color: #1976d2;
+  color: #fff;
+}
+

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Trapecio</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+  <h1>Calculadora de Figuras Geométricas</h1>
+  <h2>Trapecio</h2>
+
+  <img src="/img/trapecio.png" alt="Imagen de un rectángulo" style="max-width: 100px; margin: 10px 0;">
+
+
+  <form method="POST" action="/trapecio">
+    <label for="baseMayor">Base mayor:</label>
+    <input name="baseMayor" id="baseMayor" type="number" step="any" required>
+
+    <label for="baseMenor">Base menor:</label>
+    <input name="baseMenor" id="baseMenor" type="number" step="any" required>
+
+    <label for="altura">Altura:</label>
+    <input name="altura" id="altura" type="number" step="any">
+
+    <label for="lado1">Lado 1:</label>
+    <input name="lado1" id="lado1" type="number" step="any">
+
+    <label for="lado2">Lado 2:</label>
+    <input name="lado2" id="lado2" type="number" step="any">
+
+    <div class="botones">
+      <button name="tipoOperacion" value="area" type="submit">Calcular Área</button>
+      <button name="tipoOperacion" value="perimetro" type="submit">Calcular Perímetro</button>
+    </div>
+  </form>
+
+  <% if (typeof error !== 'undefined' && error) { %>
+    <p style="color: red;"><%= error %></p>
+  <% } %>
+
+
+  <% if (resultadoArea) { %>
+    <p><%= resultadoArea %></p>
+  <% } %>
+
+  <% if (resultadoPerimetro) { %>
+    <p><%= resultadoPerimetro %></p>
+  <% } %>
+
+  <ul>
+    <li><a href="/">Inicio</a></li>
+    <li><a href="/rectangulo">Rectángulo</a></li>
+    <li><a href="/rombo">Rombo</a></li>
+  </ul>
+
+</body>
+</html>
